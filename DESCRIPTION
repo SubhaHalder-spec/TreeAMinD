@@ -1,0 +1,14 @@
+Package: TreeAMinD
+Type: Package
+Title: AMin-D Test
+Version: 0.2.0
+Author: Subha Halder <sb.halder123456@gmail.com>
+Maintainer: Subha Halder <sb.halder123456@gmail.com>
+Description: This package provides a solution for testing equality means against tree-ordered alternatives in one-way ANOVA. We have considered testing of H_0:mu_0 = mu_1 = ... = mu_k vs H_1:mu_0 <= mu_i (at least one strict inequality), for all i >= 1, where mu_0 and mu_i represents the population means of the control and i-th treatment. The input consists of two variables: sample_data and significance_level. The output consists of the critical value, the AMin-D test statistic value, and the result, which indicates whether to reject or not reject the null hypothesis.  If the test statistic value is greater than the critical value, we reject the null hypothesis; otherwise, we do not reject it.
+Usage: TreeAMinD(sample_data, significance_level)
+Imports:MASS
+Arguments: The data should be structured as a list, namely in the format list(a, b, c, ...), where a is the control treatment and others (b, c, ...) represent data vectors of different normal independent treatments. The significance level (e.g., 0.05, 0.01) refers to the set threshold of significance for this test. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
