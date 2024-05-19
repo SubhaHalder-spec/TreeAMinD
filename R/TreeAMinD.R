@@ -45,7 +45,7 @@ TreeAMinD <- function(sample_data, significance_level){
   } else {
     result <- "Do not reject null hypothesis"
   }
-  return(paste("Critical value:", quantile_value, "; D_AMax Test statistic:", D_Amin, "; Result:", result))
+  return(paste("Critical value:", quantile_value, "; D_AMin Test statistic:", D_Amin, "; Result:", result))
 }
 
 
